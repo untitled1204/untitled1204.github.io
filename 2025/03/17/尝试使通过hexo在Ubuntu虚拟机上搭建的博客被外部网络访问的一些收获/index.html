@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="miccall" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">MICCALL</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/miccall" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://img.picui.cn/free/2025/03/16/67d668498dc6e.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >尝试使通过hexo在Ubuntu虚拟机上搭建的博客被外部网络访问的一些收获</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>我在Ubuntu虚拟机上使用hexo搭建了一个个人博客，之后hex o s运行了起来，获悉该服务正在监听localhost:4000端口，便兴致冲冲的拿着我的虚拟机IP地址加上端口号4000让对象点进去看，结果显然是失败的，因为它是个内网IP，怎么可能被外部网络的用户在互联网上访问到！</p>
+<p>因此，我询问了AI大量的关于“如何才能让外部网络的用户通过浏览器访问到我在虚拟机上搭建的博客”，AI巴拉巴拉说了一大堆，总结一下就是，如果我需要实现让同一个局域网的用户访问到我的博客，那么非常简单，假定我的虚拟机目前是桥接模式，那么局域网内的其他设备就能够直接通过我的虚拟机IP+4000端口号访问到我的博客；假设我的虚拟机目前是NAT模式，那么也只是稍微有点复杂，我们需要再VMware中通过虚拟网络编辑器在NAT设置里面增加一个端口映射规则，比如说将主机的8888端口映射到虚拟机的4000端口。</p>
+<p>我提取了几个关键词——局域网、互联网、桥接模式、NAT模式、公网IP、地址转换、端口映射、网关、网卡、网络适配器、路由器、云服务器……</p>
+<p>下面我们一个一个说。</p>
+<h2 id="一、局域网和互联网"><a href="#一、局域网和互联网" class="headerlink" title="一、局域网和互联网"></a>一、局域网和互联网</h2><h3 id="1、局域网"><a href="#1、局域网" class="headerlink" title="1、局域网"></a>1、局域网</h3><p>局域网是指在某一相对较小区域内，将多台计算机及外部设备等通过网络连接设备，以有线（如电缆、光缆）或无线（如 Wi-Fi ）的方式互联而成的计算机组。该区域一般方圆几千米以内，比如一个家庭、办公室、校园或工厂。</p>
+<p>总之就像校园网。</p>
+<h3 id="2、互联网"><a href="#2、互联网" class="headerlink" title="2、互联网"></a>2、互联网</h3><p>先说说广域网，广域网是一种覆盖范围广泛的计算机网络，它可以跨越城市、国家甚至全球范围，用于连接不同地理位置的局域网（LAN）或其他广域网。</p>
+<p>局域网是网络的基本单元，广域网是连接局域网的桥梁，而互联网则是<strong>由众多广域网和局域网共同组成</strong>的全球网络体系</p>
+<h3 id="3、公网IP"><a href="#3、公网IP" class="headerlink" title="3、公网IP"></a>3、公网IP</h3><p>想要上网，公网IP必不可少。</p>
+<p>简洁的来说，公网IP是一个地址标签，被携带在数据报文中。当我们<strong>请求服务</strong>时，网络设备根据这个标签来转发数据，精准的将数据发送到请求数据的设备。除了获取数据，当我们想<strong>被别人访问</strong>的时候，告知我们网站服务器的公网IP，其他用户就能在任何有网络连接的地方通过浏览器访问到我们的服务。</p>
+<h2 id="二、网关、网卡、网络适配器"><a href="#二、网关、网卡、网络适配器" class="headerlink" title="二、网关、网卡、网络适配器"></a>二、网关、网卡、网络适配器</h2><p>这些零碎的概念暂且放在这里过渡一下。</p>
+<p><strong>网关</strong>是一种网络设备，它充当了不同网络之间的连接桥梁，实现不同网络协议、不同网段或不同类型网络之间的数据转发和通信。局域网中，网关通常是连接局域网和其他网络（如互联网）的设备，如<strong>路由器</strong>。</p>
+<p><strong>网卡</strong> 即网络接口卡，是计算机中的一块硬件设备，负责将计算机内部的数据转换为能够在网络中传输的信号，同时也将从网络中接收到的信号转换为计算机能够理解的数据。总之就是信号转换的。</p>
+<p><strong>网络适配器</strong>实际上就是网卡的另一种称呼。它是计算机与网络之间的接口，提供了物理连接和数据传输的功能。</p>
+<h2 id="三、NAT模式和桥接模式"><a href="#三、NAT模式和桥接模式" class="headerlink" title="三、NAT模式和桥接模式"></a>三、NAT模式和桥接模式</h2><h3 id="1、NAT模式"><a href="#1、NAT模式" class="headerlink" title="1、NAT模式"></a>1、NAT模式</h3><p>NAT模式即网络地址转换模式，是一种将私有网络地址转换为公有网络地址的技术。当虚拟机设置为NAT模式时，它会连接到虚拟机软件创建的虚拟NAT网络。</p>
+<p>通俗来说，就是虚拟机与主机之间形成了一个小的局域网。</p>
+<p><strong>虚拟机上网时</strong>，虚拟NAT设备将虚拟机的私有IP地址转换为主机的IP，然后将请求发送到外部网络。其实在总的网络大环境中，虚拟机上网使用了NAT的嵌套。</p>
+<p><strong>主机所在局域网用户访问虚拟机上的服务时</strong>，访问的是主机IP+XXX端口号（假设已经在VMware上进行过端口映射了）。</p>
+<h3 id="2、桥接模式"><a href="#2、桥接模式" class="headerlink" title="2、桥接模式"></a>2、桥接模式</h3><p>此模式下，虚拟机与<strong>主机是并列的关系</strong>，也相当与主机所在局域网内一台真实的设备，所以与主机上网的方式就一样了，这里不赘述。</p>
+<h2 id="四、路由器"><a href="#四、路由器" class="headerlink" title="四、路由器"></a>四、路由器</h2><h3 id="1、主要工作"><a href="#1、主要工作" class="headerlink" title="1、主要工作"></a>1、主要工作</h3><p>这里说几个主要作用：<br></p>
+<p>首先是<strong>地址转换</strong>（NAT，上面有提到）。<br></p>
+<p>其次是<strong>无线接入</strong>（创建无线网络，让支持无线连接的设备通过 Wi - Fi 接入网络，摆脱网线的束缚）。<br></p>
+<p>最后是端口映射和端口转发</p>
+<h3 id="2、如何使用"><a href="#2、如何使用" class="headerlink" title="2、如何使用"></a>2、如何使用</h3><p>有硬件连接和设置路由器两个步骤。</p>
+<p>硬件连接即，<strong>首先</strong>将宽带入户线（如光纤、ADSL 电话线等）连接到路由器的 WAN 口（广域网口）。如果是通过网线接入的宽带，则将网线插入 WAN 口。<strong>然后</strong>用网线将路由器的 LAN 口（局域网口）与电脑或其他需要有线连接的设备相连。如果有多台设备需要有线连接，可以使用交换机扩展 LAN 口数量。</p>
+<p>设置路由器即，进入路由器管理界面按需求设置即可。根据上面说的，你应该知道要设置端口映射噜，当然只是一方面。</p>
+<h3 id="3、个人疑问"><a href="#3、个人疑问" class="headerlink" title="3、个人疑问"></a>3、个人疑问</h3><p>我现在已经知道，如果不想租用服务器，那么我们需要实现物理层的宽带连接、拥有一台物理服务器（比如二手电脑），以及申请一个公网IP、定义端口映射规则。那么我可不可以将二手电脑当作物理服务器，通过购买路由器接入宽带，并自定义端口映射规则，使其他用户能从互联网上访问到我的 “云服务器”嘞？<br>想法很好，但是可能会因为私自建立信道而违法喔。</p>
+<h2 id="五、云服务器"><a href="#五、云服务器" class="headerlink" title="五、云服务器"></a>五、云服务器</h2><h3 id="1、原理"><a href="#1、原理" class="headerlink" title="1、原理"></a>1、原理</h3><p>云服务器原理主要是利用虚拟化技术把物理服务器资源虚拟划分成多个虚拟服务器，让多个用户或应用能共享硬件资源且相互隔离。通过分布式存储技术，将数据分散存于多个设备上，实现冗余备份与存储虚拟化管理。借助网络技术构建虚拟网络，实现网络隔离与负载均衡。利用集群管理软件统一管理集群资源，配合自动化工具实现云服务器的自动化部署、配置与运维。（这段是AI内容哈，总之就是把一台物理服务器划分成了多个虚拟服务器，我们的虚拟机就是类似这样划分的。）</p>
+<h3 id="2、个人疑问"><a href="#2、个人疑问" class="headerlink" title="2、个人疑问"></a>2、个人疑问</h3><p>我一直好奇，云服务提供商利用虚拟化技术，将一台物理服务器的计算、存储和网络资源进行抽象和划分，切割成多个相互隔离的虚拟环境，每个虚拟环境就是一个云服务器，可独立运行操作系统和应用程序，供不同租户使用，从而实现一台物理服务器对应多个云服务器。那么这个是在云服务商那里进行虚拟化的，我们怎么能使用呢，我们为什么不需要跑到他那里去用？</p>
+<p>对于这个问题，个人理解是，首先我们可以使用远程连接协议（如ssh，不需要处于同一个局域网哦），其次是云服务商提供的云服务管理平台，用户能够执行一系列操作，包括创建、启动、停止、删除云服务器，调整云服务器的配置，设置网络访问规则，查看服务器的运行状态和监控数据等。所有这些操作都是通过网络远程发送指令到云服务商的数据中心，由后台系统自动执行，不需要我们跑过去执行。</p>
+<h2 id="六、总结"><a href="#六、总结" class="headerlink" title="六、总结"></a>六、总结</h2><p>最后嘞，这些其实都是常识，也是我在试图搭建一个可以被远方的朋友访问的博客的过程中遇到的问题，总归还是常识缺乏。其实最简单的方法是把博客托管到github上，生成GithubPages，不过我总是很羡慕传说中那些自己搭服务器的友友，难道他违法了吗，我不知道。但最终结果是，我选择托管到github上，或许以后我会购买租用云服务器的服务叭，现在实在没钱。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://untitled1204.github.io/2025/03/17/%E5%B0%9D%E8%AF%95%E4%BD%BF%E9%80%9A%E8%BF%87hexo%E5%9C%A8Ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8A%E6%90%AD%E5%BB%BA%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E5%A4%96%E9%83%A8%E7%BD%91%E7%BB%9C%E8%AE%BF%E9%97%AE%E7%9A%84%E4%B8%80%E4%BA%9B%E6%94%B6%E8%8E%B7/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://untitled1204.github.io/2025/03/17/%E5%B0%9D%E8%AF%95%E4%BD%BF%E9%80%9A%E8%BF%87hexo%E5%9C%A8Ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8A%E6%90%AD%E5%BB%BA%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%A2%AB%E5%A4%96%E9%83%A8%E7%BD%91%E7%BB%9C%E8%AE%BF%E9%97%AE%E7%9A%84%E4%B8%80%E4%BA%9B%E6%94%B6%E8%8E%B7/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
